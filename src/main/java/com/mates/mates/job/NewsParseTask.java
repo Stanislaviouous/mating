@@ -21,7 +21,8 @@ public class NewsParseTask {
 	@Scheduled(fixedDelay = 10000)
 	public void parseNews() {
 		String url = "https://news.ycombinator.com/";
-		
+
+
 		try {
 			Document doc = Jsoup.connect(url)
 					.userAgent("Google")
